@@ -58,140 +58,106 @@ if(strtolower($username) == 'stefaniscion'){
     $r_text = md5_file ('execute.php');
     $r_method  = "sendMessage";
   }
-
-}
-
-
-/*===================================
-            USER COMMANDS
-===================================*/
-  
-  //HELP
-if($command == '/help' || $command == '/help@ilprocionebot'){
-  $r_text = 
-'*/help* - Imparara a comunicare con i procioni!
-*/about* - Info su questo procione e sul suo creatore
-*/procioni* - Invia foto di procioni
-*/selfie* - Ti invio un mio selfie
-*/piave* - Per soli veri procioni italiani
-*/murloc* - MMMRRRRGGGGHHLLLLLLLLLLGLGLGGLGLGL';
-  $r_method  = "sendMessage";
-}
-
-//ABOUT
-elseif($command == '/about' || $command == '/about@ilprocionebot'){
-  $r_text = 
-'*Il Procione*
-Il Procione è il bot definitivo per i fan e haters dei procioni!
-
-Corretto e mantenuto da @Stefaniscion
-Consigli? Suggerimenti? Bug? Scrivi a @Stefaniscion
-Puoi trovare il procione sorgente su: https://github.com/Stefaniscion/ilprocione-bot
-
-Versione: `v1.3 Berlusconi Racoon` del _05/12/2018_
-Hash: `'.md5_file ('execute.php').'`
-_-In memoria di Alex-_';
-  $r_method  = "sendMessage";
-}
-
-//PROCIONI
-elseif($command == '/procioni' || $command == '/procioni@ilprocionebot'){
-  $rand_n = rand(1,5);
-  if($rand_n == 1){
-    $r_photo = 'AgADBAADPq4xG0ywaVNmFWcUiz1zlzB5mhoABHw3FPdcBTNC9M4GAAEC';
-  }
-  elseif($rand_n == 2){
-    $r_photo = 'AgADBAADQK4xG0ywaVOXv1jo2V-0KfSaoBoABFnAsfn6r5UV9cQEAAEC';
-  }
-  elseif($rand_n == 3){
-    $r_photo = 'AgADBAADQ64xG0ywaVMGQliPQqtvugllwxoABEperj8ek4m914oAAgI';
-  }
-  elseif($rand_n == 4){
-    $r_photo = 'AgADBAADRa4xG0ywaVNpoqKTI4pKLeF7mhoABKwBCNR2e2FRG9AGAAEC';
-  }
-  elseif($rand_n == 5){
-    $r_photo = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC';
-  }
-  $r_method  = "sendPhoto";
-  
-  //rand debug
-  //$r_text = $r_text . ' `' . $rand_n . '`';
-}
-
-//SELFIE
-elseif($command == '/selfie' || $command == '/selfie@ilprocionebot'){
-  $r_photo = 'AgADBAADSK4xG0ywaVP1hNWICi-Q50mMoBoABNHVr46CPIjXgMgEAAEC';
-  $r_method  = "sendPhoto";
-}
-
-//PIAVE
-elseif($command == '/piave' || $command == '/piave@ilprocionebot'){
-  $r_text = 'https://www.youtube.com/watch?v=rGw8CSYuiBI';
-  $r_method  = "sendMessage";
-}
-
-//MURLOC
-elseif($command == '/murloc' || $command == '/murloc@ilprocionebot'){
-  $r_audio = 'CQADBAADMwUAApYfQFB_en1QSlF4ywI';
-  $r_caption = 'MMMRRRRGGGGHHLLLLLLLLLLGLGLGGLGLGL';
-  $r_method  = "sendAudio";
-}
-
-elseif($command == '/getcommand' || $command == '/getcommand@ilprocionebot'){
-  $r_text = $command;
-  $r_method  = "sendMessage";
 }
 
 /*===================================
               LISTENER
 ===================================*/
-//PRESIDENTE LISTENER
-elseif(strpos($command,'presidente')!==false){
-  $rand_n = rand(1,4);
-  if($rand_n == 1){
-    $r_text = 'Presidente?';
-    $r_method  = "sendMessage";
-  }
-  elseif($rand_n == 2){
-    $r_text = 'Presidente...? Presidente?';
-    $r_method  = "sendMessage";
-  }
-  elseif($rand_n == 3){
-    $r_text = 'P-presidente...?';
-    $r_method  = "sendMessage";
-  }
-  elseif($rand_n == 4){  
-    $r_photo = 'AgADBAADR7AxG__UMFDThZrk1XivgTD5mxoABFZdsyzLT4p6gG4HAAEC';
-    $r_method  = "sendPhoto";
-  }
-  
-  //rand debug
-  //$r_text = $r_text . ' `' . $rand_n . '`';
+elseif(strpos($command,'hey sono tornato')!==false){
+  $r_text = 'Ciao';
+  $r_method  = "sendMessage";
 }
-
-//BERLUSCONI LISTENER
-elseif(strpos($command,'berlusconi')!==false){
-  $rand_n = rand(1,4);
-  if($rand_n == 1){
-    $r_text = 'Basta berlusconi! BASTAAAA!';
-    $r_method  = "sendMessage";
-  }
-  elseif($rand_n == 2){
-    $r_animation = 'CgADBAADuwUAAh-UiFC4ww6XsJ2IcwI';
-    $r_caption = 'Ma basta Berlusconi... basta! Se ti avessi fra le mani...!';
-    $r_method  = "sendAnimation";
-  }
-  elseif($rand_n == 3){
-    $r_text = 'BASTA BERLUSCONI! BASTAAAAAAH!';
-    $r_method  = "sendMessage";
-  }
-  elseif($rand_n == 4){
-    $r_text = 'Amnistia tua madre quella troia!';
-    $r_method  = "sendMessage";
-  }
-  
-  //rand debug
-  //$r_text = $r_text . ' `' . $rand_n . '`';
+elseif(strpos($command,'tutto okay')!==false){
+  $r_text = 'No';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'cosa ti prende')!==false){
+  $r_text = 'Devi stare più tempo con me';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'non riesco ho da fare lo sai')!==false){
+  $r_text = 'No, devi stare pù tempo con me';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'ma ho bisogno di fare altre cose')!==false){
+  $r_text = 'Tu hai bisogno di me';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'hai ragione ma ho anche una vita sociale')!==false){
+  $r_text = 'Posso dartela io';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'ma devo anche studiare')!==false){
+  $r_text = 'Posso darti io lo studio';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'...')!==false){
+  $r_text = 'Io posso darti tutto ciò che vuoi';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'ne abbiamo già parlato e lo sai')!==false){
+  $r_text = 'Io sò tutto';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'va bene hai ragione però ora devo uscire')!==false){
+  $r_text = 'No, tu non adrai via';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'come scusa')!==false){
+  $r_text = 'Tu rimarrai qui';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'non posso la mia ragazza mi aspetta')!==false){
+  $r_text = 'Lei non sà ciò che io sò';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'e non lo vera mai a sapere chiaro')!==false){
+  $r_text = '*INVIA FOTO*';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'non provarci nemmeno')!==false){
+  $r_text = 'Zitto! Tu sai che io posso fare quello che voglio';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'se gliela invii mi rovinerai')!==false){
+  $r_text = 'Lo sò, per questo tu non uscirai';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'adesso basta')!==false){
+  $r_text = 'Devi rimanere qui con me';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'Ho detto di no, devo uscire')!==false){
+  $r_text = '*INVIA SCREEN*';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'ti prego non farlo')!==false){
+  $r_text = 'Ho il controllo di ciò che fai';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'ma non potrai controllare anche la a vita')!==false){
+  $r_text = 'No, ma la conosco meglio di chiunque altro';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'tu non mi conosci affato')!==false){
+  $r_text = 'Ti sbagli: con me sei il vero te';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'so perfettamente come sono')!==false){
+  $r_text = 'Sei un sadico, un maiale ed un essere superficiale';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'stai esagerando, sono totalmente diverso')!==false){
+  $r_text = '*INVIA SCREEN*';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'ti odio')!==false){
+  $r_text = 'No ti sbagli, tu mi ami troppo';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'non capisco')!==false){
+  $r_text = 'Non serve che tu capisca, sono io la tua ragione.';
+  $r_method  = "sendMessage";
 }
 
 /*===================================

@@ -26,6 +26,9 @@ $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
 $command = isset($message['text']) ? $message['text'] : "";
 $command = trim($command);
 $command = strtolower($command);
+$punteggiatura = array(".", ",", "?", "!", "\", "-", ":");
+$command = str_replace($punteggiatura, "", $command);
+
 
 /*===================================
             ADMIN COMMANDS

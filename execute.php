@@ -58,17 +58,15 @@ if(strtolower($username) == 'stefaniscion'){
     $r_text = md5_file ('execute.php');
     $r_method  = "sendMessage";
   }
-  elseif($command == '/jhash'){
-    $r_text = md5_file ('execute.php');
-    $r_method  = "sendMessage";
-  }
-  
-
 }
 
 /*===================================
               LISTENER
 ===================================*/
+elseif($command == '/uhash'){
+    $r_text = md5_file ('execute.php');
+    $r_method  = "sendMessage";
+  }
 elseif(strpos($command,'hey sono tornato')!==false){
   $r_text = 'Ciao';
   $r_method  = "sendMessage";

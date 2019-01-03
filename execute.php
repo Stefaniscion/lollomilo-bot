@@ -26,8 +26,20 @@ $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
 $command = isset($message['text']) ? $message['text'] : "";
 $command = trim($command);
 $command = strtolower($command);
+
+/* RIMUOVE PUNTEGGIATURA */
 $punteggiatura = array(".", ",", "?", "!", "-", ":");
 $command = str_replace($punteggiatura, "", $command);
+
+/* SOSTITUISCE ACCENTATE */
+$command = str_replace("à", "a", $command);
+$command = str_replace("è", "e", $command);
+$command = str_replace("é", "e", $command);
+$command = str_replace("ì", "i", $command);
+$command = str_replace("ò", "o", $command);
+$command = str_replace("ù", "u", $command);
+
+
 
 
 /*===================================

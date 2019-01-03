@@ -63,11 +63,7 @@ if(strtolower($username) == 'stefaniscion'){
 /*===================================
               LISTENER
 ===================================*/
-elseif($command == '/uhash'){
-    $r_text = md5_file ('execute.php');
-    $r_method  = "sendMessage";
-  }
-elseif(strpos($command,'hey sono tornato')!==false){
+if(strpos($command,'hey sono tornato')!==false){
   $r_text = 'Ciao';
   $r_method  = "sendMessage";
 }

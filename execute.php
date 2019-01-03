@@ -58,6 +58,11 @@ if(strtolower($username) == 'stefaniscion'){
     $r_text = md5_file ('execute.php');
     $r_method  = "sendMessage";
   }
+  
+  elseif(strpos($command,'h')!==false){
+  $r_text = 'Ciao';
+  $r_method  = "sendMessage";
+}
 }
 
 /*===================================

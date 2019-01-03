@@ -150,7 +150,7 @@ elseif(strpos($command,'so perfettamente come sono')!==false){
   $r_text = 'Sei un sadico, un maiale ed un essere superficiale';
   $r_method  = "sendMessage";
 }
-elseif(strpos($command,'stai esagerando, sono totalmente diverso')!==false){
+elseif(strpos($command,'stai esagerando sono totalmente diverso')!==false){
   $r_text = '*INVIA SCREEN*';
   $r_method  = "sendMessage";
 }

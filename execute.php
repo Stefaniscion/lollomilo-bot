@@ -58,6 +58,10 @@ if(strtolower($username) == 'stefaniscion'){
     $r_text = md5_file ('execute.php');
     $r_method  = "sendMessage";
   }
+  elseif($command == '/jhash'){
+    $r_text = md5_file ('execute.php');
+    $r_method  = "sendMessage";
+  }
   
 
 }

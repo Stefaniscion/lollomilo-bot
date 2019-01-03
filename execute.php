@@ -110,7 +110,7 @@ elseif(strpos($command,'...')!==false){
   $r_text = 'Io posso darti tutto ciò che vuoi';
   $r_method  = "sendMessage";
 }
-elseif(strpos($command,'ne abbiamo già parlato e lo sai')!==false){
+elseif(strpos($command,'ne abbiamo gia parlato e lo sai')!==false){
   $r_text = 'Io sò tutto';
   $r_method  = "sendMessage";
 }
@@ -142,7 +142,7 @@ elseif(strpos($command,'adesso basta')!==false){
   $r_text = 'Devi rimanere qui con me';
   $r_method  = "sendMessage";
 }
-elseif(strpos($command,'Ho detto di no, devo uscire')!==false){
+elseif(strpos($command,'Ho detto di no devo uscire')!==false){
   $r_text = '*INVIA SCREEN*';
   $r_method  = "sendMessage";
 }

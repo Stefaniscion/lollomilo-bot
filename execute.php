@@ -126,7 +126,7 @@ elseif(strpos($command,'non posso la mia ragazza mi aspetta')!==false){
   $r_text = 'Lei non sà ciò che io sò';
   $r_method  = "sendMessage";
 }
-elseif(strpos($command,'e non lo vera mai a sapere chiaro')!==false){
+elseif(strpos($command,'e non lo verra mai a sapere chiaro')!==false){
   $r_photo = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC'; 
   $r_method  = "sendPhoto";
 }

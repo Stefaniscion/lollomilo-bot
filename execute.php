@@ -127,7 +127,7 @@ elseif(strpos($command,'non posso la mia ragazza mi aspetta')!==false){
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'e non lo vera mai a sapere chiaro')!==false){
-  $r_text = '*INVIA FOTO*';
+  $r_photo = 'AgADBAADp7MxG-Yv8FF5tc78d--dtCoSIhsABLftyxG_w-UY4eEAAgI';
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'non provarci nemmeno')!==false){

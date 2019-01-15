@@ -165,7 +165,7 @@ elseif(strpos($command,'so perfettamente come sono')!==false){
 }
 elseif(strpos($command,'stai esagerando sono totalmente diverso')!==false){
   //$r_photo = "AgADBAAD-K8xG_4DcVGghPdyqJTh7YduwxoABPsuU-_FiQHBHkICAAEC";
-  $r_photo = "AgADBAAD7rExG16Y2VHIKEoFaEbqyPtRwxoABBU9y49ykSG-kKUCAAEC";
+  $r_photo = "AgADBAAD4rMxG-Yv8FEDFWyO4mAuUZ8moBoABOvDE1hNG8gICu4GAAEC";
   $r_method  = "sendPhoto";
 }
 elseif(strpos($command,'ti odio')!==false){

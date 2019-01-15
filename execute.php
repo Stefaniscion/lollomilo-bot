@@ -143,8 +143,8 @@ elseif(strpos($command,'adesso basta')!==false){
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'Ho detto di no devo uscire')!==false){
-  $r_text = '*INVIA SCREEN*';
-  $r_method  = "sendMessage";
+  $r_text = 'AgADBAADp7MxG-Yv8FF5tc78d--dtCoSIhsABLftyxG_w-UY4eEAAgI';
+  $r_method  = "sendPhoto";
 }
 elseif(strpos($command,'ti prego non farlo')!==false){
   $r_text = 'Ho il controllo di ciò che fai';

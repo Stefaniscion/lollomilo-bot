@@ -29,7 +29,7 @@ $command = strtolower($command);
 
 /* RIMUOVE PUNTEGGIATURA */
 if($command != '...'){
-  $punteggiatura = array(".", ",", "?", "!", "-", ":")
+  $punteggiatura = array(".", ",", "?", "!", "-", ":");
 }
 $command = str_replace($punteggiatura, "", $command);
 

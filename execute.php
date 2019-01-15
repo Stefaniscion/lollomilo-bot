@@ -143,7 +143,7 @@ elseif(strpos($command,'adesso basta')!==false){
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'Ho detto di no devo uscire')!==false){
-  $r_text = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC';
+  $r_text = 'AgADBAAD7rExG16Y2VHIKEoFaEbqyPtRwxoABBU9y49ykSG-kKUCAAEC';
   $r_method  = "sendPhoto";
 }
 elseif(strpos($command,'ti prego non farlo')!==false){

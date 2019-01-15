@@ -207,6 +207,6 @@ if($r_caption){
 
 $parameters["method"] = $r_method;
 
-sleep(5);
+sleep(3);
 echo json_encode($parameters);
 

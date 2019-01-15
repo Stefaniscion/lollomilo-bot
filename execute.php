@@ -127,8 +127,7 @@ elseif(strpos($command,'non posso la mia ragazza mi aspetta')!==false){
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'e non lo verra mai a sapere chiaro')!==false){
-  $r_photo = 'AgADBAAD9bExG16Y2VFHWzhxOuwBeRA9IhsABIQXlqfKPxMDG5QCAAEC';
-  $r_text = 'AgADBAAD9bExG16Y2VFHWzhxOuwBeRA9IhsABIQXlqfKPxMDG5QCAAEC';
+  $r_photo = "AgADBAAD9bExG16Y2VFHWzhxOuwBeRA9IhsABIQXlqfKPxMDG5QCAAEC";
   $r_method  = "sendPhoto";
 }
 elseif(strpos($command,'non provarci nemmeno')!==false){
@@ -144,7 +143,7 @@ elseif(strpos($command,'adesso basta')!==false){
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'ho detto di no devo uscire')!==false){
-  $r_photo = 'AgADBAAD7rExG16Y2VHIKEoFaEbqyPtRwxoABBU9y49ykSG-kKUCAAEC';
+  $r_photo = "AgADBAAD7rExG16Y2VHIKEoFaEbqyPtRwxoABBU9y49ykSG-kKUCAAEC";
   $r_method  = "sendPhoto";
 }
 elseif(strpos($command,'ti prego non farlo')!==false){
@@ -164,8 +163,8 @@ elseif(strpos($command,'so perfettamente come sono')!==false){
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'stai esagerando sono totalmente diverso')!==false){
-  $r_text = '*INVIA SCREEN*';
-  $r_method  = "sendMessage";
+  $r_photo = "AgADBAAD-K8xG_4DcVGghPdyqJTh7YduwxoABJ3piZpyn8-jIEICAAEC";
+  $r_method  = "sendPhoto";
 }
 elseif(strpos($command,'ti odio')!==false){
   $r_text = 'No ti sbagli, tu mi ami troppo';

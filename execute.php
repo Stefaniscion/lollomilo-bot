@@ -128,7 +128,7 @@ elseif(strpos($command,'non posso la mia ragazza mi aspetta')!==false){
 }
 elseif(strpos($command,'e non lo verra mai a sapere chiaro')!==false){
   $r_photo = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC'; 
-  $r_method  = "sendPhoto";
+  $r_method  = "sendMessage";
 }
 elseif(strpos($command,'non provarci nemmeno')!==false){
   $r_text = 'Zitto! Tu sai che io posso fare quello che voglio';

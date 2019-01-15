@@ -143,7 +143,7 @@ elseif(strpos($command,'adesso basta')!==false){
   $r_text = 'Devi rimanere qui con me';
   $r_method  = "sendMessage";
 }
-elseif(strpos($command,'Ho detto di no devo uscire')!==false){
+elseif(strpos($command,'ho detto di no devo uscire')!==false){
   $r_photo = 'AgADBAAD7rExG16Y2VHIKEoFaEbqyPtRwxoABBU9y49ykSG-kKUCAAEC';
   $r_text = 'AgADBAAD7rExG16Y2VHIKEoFaEbqyPtRwxoABBU9y49ykSG-kKUCAAEC';
   $r_method  = "sendMessage";

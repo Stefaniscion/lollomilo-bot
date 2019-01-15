@@ -90,7 +90,7 @@ elseif(strpos($command,'cosa ti prende')!==false){
   $r_text = 'Devi stare più tempo con me';
   $r_method  = "sendMessage";
 }
-elseif(strpos($command,'non riesco ho da fare lo sai')!==false){
+elseif(strpos($command,'non riesco ho da fare e lo sai')!==false){
   $r_text = 'No, devi stare pù tempo con me';
   $r_method  = "sendMessage";
 }
@@ -108,6 +108,10 @@ elseif(strpos($command,'ma devo anche studiare')!==false){
 }
 elseif(strpos($command,'...')!==false){
   $r_text = 'Io posso darti tutto ciò che vuoi';
+  $r_method  = "sendMessage";
+}
+elseif(strpos($command,'ti sbagli ho una vita fuori da te')!==false){
+  $r_text = 'Posso darti io una vita, la vita che vuoi';
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'ne abbiamo gia parlato e lo sai')!==false){
@@ -151,11 +155,11 @@ elseif(strpos($command,'ti prego non farlo')!==false){
   $r_text = 'Ho il controllo di ciò che fai';
   $r_method  = "sendMessage";
 }
-elseif(strpos($command,'ma non potrai controllare anche la a vita')!==false){
+elseif(strpos($command,'ma non potrai controllare anche la mia vita')!==false){
   $r_text = 'No, ma la conosco meglio di chiunque altro';
   $r_method  = "sendMessage";
 }
-elseif(strpos($command,'tu non mi conosci affato')!==false){
+elseif(strpos($command,'tu non mi conosci affatto')!==false){
   $r_text = 'Ti sbagli: con me sei il vero te';
   $r_method  = "sendMessage";
 }

@@ -127,7 +127,7 @@ elseif(strpos($command,'non posso la mia ragazza mi aspetta')!==false){
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'e non lo verra mai a sapere chiaro')!==false){
-  $r_photo = "AgADBAAD9bExG16Y2VFHWzhxOuwBeRA9IhsABIQXlqfKPxMDG5QCAAEC";
+  $r_photo = "AgADBAAD9bExG16Y2VFHWzhxOuwBeRA9IhsABSgl1Km8qqkZlAIAAQI";
   $r_method  = "sendPhoto";
 }
 elseif(strpos($command,'non provarci nemmeno')!==false){
@@ -163,7 +163,7 @@ elseif(strpos($command,'so perfettamente come sono')!==false){
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'stai esagerando sono totalmente diverso')!==false){
-  $r_photo = "AgADBAAD-K8xG_4DcVGghPdyqJTh7YduwxoABJ3piZpyn8-jIEICAAEC";
+  $r_photo = "AgADBAAD-K8xG_4DcVGghPdyqJTh7YduwxoABPsuU-_FiQHBHkICAAEC";
   $r_method  = "sendPhoto";
 }
 elseif(strpos($command,'ti odio')!==false){

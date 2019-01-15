@@ -28,7 +28,9 @@ $command = trim($command);
 $command = strtolower($command);
 
 /* RIMUOVE PUNTEGGIATURA */
-$punteggiatura = array(".", ",", "?", "!", "-", ":");
+if($command != '...'){
+  $punteggiatura = array(".", ",", "?", "!", "-", ":")
+}
 $command = str_replace($punteggiatura, "", $command);
 
 /* SOSTITUISCE ACCENTATE */

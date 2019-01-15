@@ -114,7 +114,7 @@ elseif(strpos($command,'ne abbiamo gia parlato e lo sai')!==false){
   $r_text = 'Io sò tutto';
   $r_method  = "sendMessage";
 }
-elseif(strpos($command,'va bene hai ragione però ora devo uscire')!==false){
+elseif(strpos($command,'va bene hai ragione pero ora devo uscire')!==false){
   $r_text = 'No, tu non adrai via';
   $r_method  = "sendMessage";
 }
@@ -127,9 +127,9 @@ elseif(strpos($command,'non posso la mia ragazza mi aspetta')!==false){
   $r_method  = "sendMessage";
 }
 elseif(strpos($command,'e non lo verra mai a sapere chiaro')!==false){
-  $r_photo = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC'; 
-  $r_text = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC'; 
-  $r_method  = "sendMessage";
+  $r_photo = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC';
+  $r_text = 'AgADBAADRq4xG0ywaVN_f3LbmbI4SkCcnRoABNa3PX4Ygobz9MUGAAEC';
+  $r_method  = "sendPhoto";
 }
 elseif(strpos($command,'non provarci nemmeno')!==false){
   $r_text = 'Zitto! Tu sai che io posso fare quello che voglio';
